@@ -1,9 +1,17 @@
 [package]
+authors = ["The Rust Project Developers"]
 name = "rtslexer"
 version = "0.1.0"
-authors = ["haike <haike0513@gmail.com>"]
+license = "MIT OR Apache-2.0"
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+# Note: do not remove this blank `[lib]` section.
+# This will be used when publishing this crate as `rustc-ap-rustc_lexer`.
+[lib]
+doctest = false
+name = "rtslexer"
+
+# Note that this crate purposefully does not depend on other rustc crates
 [dependencies]
+unicode-xid = "0.2.0"
